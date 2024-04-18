@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Chapter 3 - The End? NO
+=======
+Chapter 3 — The End Is Only The Beginning NOOOOOO
+>>>>>>> pract2
