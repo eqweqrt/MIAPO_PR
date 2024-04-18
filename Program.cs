@@ -1,5 +1,4 @@
-﻿// 123
-using System;
+﻿using System;
 
 namespace SimpleCalculator
 {
@@ -13,32 +12,24 @@ namespace SimpleCalculator
             Console.Write("Enter another number: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Choose an operation (+, -, *, /):");
+            Console.WriteLine("Choose an operation (^, %, ^2, Ave):");
             string operation = Console.ReadLine();
 
             double result;
 
             switch (operation)
             {
-                case "+":
-                    result = num1 + num2;
+                case "^":
+                    result = Math.Pow(num1, num2);
                     break;
-                case "-":
-                    result = num1 - num2;
+                case "%":
+                    result = num1 % num2;
                     break;
-                case "*":
+                case "^2":
                     result = num1 * num2;
                     break;
-                case "/":
-                    if (num2 != 0)
-                    {
-                        result = num1 / num2;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Cannot divide by zero.");
-                        return;
-                    }
+                case "Ave":
+                    result = (num1 + num2) / 2;
                     break;
                 default:
                     Console.WriteLine("Invalid operation.");
